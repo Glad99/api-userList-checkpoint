@@ -21,15 +21,14 @@ const UserList = () => {
 
     return (
         <div className="flex justify-center ">
-
             <div> 
-            <h1 className="text-center text-3xl font-bold mb-4 mt-4">USER LIST</h1>
-                {userList.map(user => (<div key={user.id} className="flex flex-col bg-lime-200 mb-6 ml-3 p-5 justify-center   rounded-2xl gap-2 tracking-wide shadow-md"><h1><b>NAME:</b> {user.name}</h1>
-                <h3><b>USERNAME:</b> {user.username}</h3>
+            <h1 className="text-center text-3xl font-bold mb-5 mt-4">USER LIST</h1>
+                {userList.map(user => (<div key={user.id} className="flex flex-col bg-lime-200 mb-6 ml-3 p-5 justify-center   rounded-2xl gap-2 tracking-wide shadow-md"><h1><b>NAME:</b> <span className="text-lg">{user.name}</span></h1>
+                <h3><b>USERNAME:</b>{user.username}</h3>
                 <h3><b>EMAIL:</b> {user.email}</h3>
                 <h3><b>WEBSITE:</b> {user.website}</h3>
                 <h3><b>PHONE NUMBER:</b> {user.phone}</h3>
-                </div> ))}
+                </div>))}
             </div>
 
         </div>
